@@ -1,0 +1,1651 @@
+<!DOCTYPE html>
+<html lang="en" class="isAnimate">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <title>NEBULA | Premium Movie & TV Streaming Platform</title>
+    <meta name="description" content="Experience unlimited streaming of movies and TV shows on NEBULA. High-quality content, zero ads, and seamless playback across all your devices.">
+    <meta name="keywords" content="movie streaming, TV shows, watch movies online, streaming platform, unlimited streaming, HD quality, NEBULA">
+    <meta name="author" content="NEBULA">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nebula.rizoel.com/">
+    <meta property="og:title" content="NEBULA | Premium Movie & TV Streaming">
+    <meta property="og:description" content="Unlimited streaming of movies and TV shows with zero ads and crystal-clear quality.">
+    <meta property="og:image" content="images/og-banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nebula.rizoel.com/">
+    <meta property="twitter:title" content="NEBULA | Stream Your Favorites">
+    <meta property="twitter:description" content="Discover thousands of movies and TV shows. Stream anytime, anywhere.">
+    <meta property="twitter:image" content="images/og-banner.png">
+
+    <!--CSS ANIMATION BKC-->
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="icon" sizes="48x48" href="images/favicon-1.svg" type="image/png">
+    <link rel="icon" sizes="48x48" href="images/favicon-3.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="images/favicon-2.png" type="image/png">
+    <link rel="icon" sizes="16x16" href="images/favicon-1.png" type="image/png">
+</head>
+<script type="f67375a9a6dfac6346e25897-text/javascript">
+const css = `:root{
+--a-width:calc(30vw + ${window.innerWidth}px);
+--a-heigth:calc(30vh + ${window.innerHeight}px);
+--b-width:calc(${window.innerWidth}px - 200px);
+--c-width:calc(${window.innerWidth}px + 600px);
+}`,
+head = document.head || document.getElementsByTagName('head')[0],
+style = document.createElement('style');
+head.appendChild(style);
+style.type = 'text/css';
+if (style.styleSheet){
+style.styleSheet.cssText = css;
+} else {
+style.appendChild(document.createTextNode(css));
+};
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const img = document.querySelector('.header__item img');
+    if (img) {
+        img.style.filter = "brightness(0) invert(1)";
+    }
+});
+</script>
+<!--EMBED CSS-->
+<style>
+   /*    Advanced Player Section    */
+  .advanced-player-section {
+    padding: 80px 0 60px;
+    position: relative;
+    z-index: 1;
+  }
+  .advanced-player-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .ap-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .ap-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 12px;
+    line-height: 1.2;
+  }
+  .ap-header h2 span { color: #6C63FF; }
+  .ap-header p {
+    color: #aaa;
+    font-size: 1rem;
+    max-width: 520px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  /* Type Tabs */
+  .ap-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+  .ap-tab {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 9px 22px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.04);
+    color: #bbb;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.22s;
+    letter-spacing: 0.03em;
+  }
+  .ap-tab:hover { border-color: #6C63FF; color: #fff; }
+  .ap-tab.active {
+    background: #6C63FF;
+    border-color: #6C63FF;
+    color: #fff;
+    box-shadow: 0 0 18px rgba(108,99,255,0.35);
+  }
+  /* ID Input */
+  .ap-id-wrap {
+    max-width: 780px;
+    margin: 0 auto 28px;
+  }
+  .ap-id-input {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+  .ap-id-input:focus { border-color: #6C63FF; }
+  .ap-id-input::placeholder { color: #666; }
+  .ap-id-input--small { flex: 0 0 130px; min-width: 0; }
+  /* Multi-input row */
+  .ap-multi-inputs {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .ap-multi-inputs .ap-id-input { flex: 1; min-width: 120px; }
+  /* Two-column layout */
+  .ap-body {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 22px;
+    max-width: 1160px;
+    margin: 0 auto 28px;
+    align-items: start;
+  }
+  @media (min-width: 901px) {
+    .ap-body {
+      /* Keep desktop column height close to 16:9 preview height to avoid gaps */
+      --ap-builder-h: min(78vh, 520px);
+    }
+    .ap-settings-column {
+      height: var(--ap-builder-h);
+      max-height: var(--ap-builder-h);
+      min-height: var(--ap-builder-h);
+    }
+    /* Keep desktop preview in YouTube-like 16:9 landscape ratio */
+    .ap-iframe-wrap {
+      padding-bottom: 56.25%;
+      height: 0;
+      min-height: 0;
+    }
+  }
+  @media (max-width: 900px) { .ap-body { grid-template-columns: 1fr; } }
+  /* Right column: tabs fixed, card scrolls inside viewport without chaining to page */
+  .ap-settings-column {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overscroll-behavior: contain;
+    touch-action: pan-y;
+  }
+  @media (max-width: 900px) {
+    .ap-settings-column { max-height: min(70vh, 640px); }
+  }
+  /* Preview Card */
+  .ap-preview-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .ap-preview-topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    flex-shrink: 0;
+  }
+  .ap-preview-topbar span { color: #ccc; font-size: 0.9rem; font-weight: 600; }
+  .ap-live-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    color: #4ade80;
+  }
+  .ap-live-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #4ade80;
+    animation: apPulse 1.4s infinite;
+  }
+  @keyframes apPulse {
+    0%,100%{opacity:1;transform:scale(1)}
+    50%{opacity:0.5;transform:scale(1.3)}
+  }
+  .ap-iframe-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+  .ap-iframe-wrap iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: none;
+    background: #000;
+  }
+  /* Generated Link */
+  .ap-link-section {
+    max-width: 1160px;
+    margin: 0 auto 22px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .ap-link-section label {
+    display: block;
+    color: #aaa;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+  .ap-link-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .ap-link-url {
+    flex: 1;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #9F9BFF;
+    font-size: 0.78rem;
+    font-family: monospace;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .ap-link-url:hover { border-color: #6C63FF; }
+  /* Full-width scrollable generated link */
+  .ap-link-url-full {
+    flex: 1;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 10px 14px;
+    color: #9F9BFF;
+    font-size: 0.75rem;
+    font-family: monospace;
+    word-break: break-all;
+    white-space: pre-wrap;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    min-height: 48px;
+    line-height: 1.6;
+  }
+  .ap-link-url-full:hover { border-color: #6C63FF; }
+  .ap-copy-btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #6C63FF;
+    color: #fff;
+    border: none;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .ap-copy-btn:hover { background: #5a52e0; transform: translateY(-1px); }
+  .ap-copy-btn.copied { background: #22c55e; }
+  .ap-share-note {
+    color: #666;
+    font-size: 0.76rem;
+    margin-top: 8px;
+  }
+  /* Settings Card */
+  .ap-settings-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 20px;
+    flex: 1;
+    min-height: 0;
+    max-height: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: auto;
+    touch-action: pan-y;
+    contain: content;
+  }
+  .ap-settings-card h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 16px;
+  }
+  /* Settings Tabs */
+  .ap-settings-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+    flex-shrink: 0;
+  }
+  .ap-settings-tabbtn {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.04);
+    color: #bbb;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .ap-settings-tabbtn:hover { border-color: #6C63FF; color: #fff; }
+  .ap-settings-tabbtn.active { background: #6C63FF; border-color: #6C63FF; color: #fff; box-shadow: 0 0 12px rgba(108,99,255,0.3); }
+  .ap-settings-panel { display: none; }
+  .ap-settings-panel.active { display: block; }
+  /* Field groups */
+  .ap-field-group {
+    margin-bottom: 18px;
+  }
+  .ap-field-group label {
+    display: block;
+    color: #ccc;
+    font-size: 0.82rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .ap-field-group select,
+  .ap-field-group input[type="text"],
+  .ap-field-group input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    font-size: 0.82rem;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+  .ap-field-group select:focus,
+  .ap-field-group input:focus { border-color: #6C63FF; }
+  /* Color row */
+  .ap-color-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .ap-color-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .ap-color-item label {
+    color: #ccc;
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .ap-color-swatch {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .ap-color-swatch input[type="color"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+  }
+  .ap-color-hex {
+    color: #9F9BFF;
+    font-size: 0.72rem;
+    font-family: monospace;
+    text-align: center;
+  }
+  .ap-advanced-header {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .ap-advanced-header h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+  }
+  .ap-advanced-header p { color: #777; font-size: 0.78rem; }
+  .ap-advanced-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+  /* Quick Actions */
+  .ap-quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 18px;
+    padding: 14px;
+    background: rgba(108,99,255,0.06);
+    border: 1px solid rgba(108,99,255,0.15);
+    border-radius: 10px;
+  }
+  .ap-quick-label {
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #9F9BFF;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 4px;
+  }
+  .ap-quick-btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid rgba(108,99,255,0.3);
+    background: rgba(108,99,255,0.1);
+    color: #c5c2ff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .ap-quick-btn:hover { background: rgba(108,99,255,0.25); color: #fff; }
+  /* Font Settings */
+  .ap-font-section {
+    max-width: 1160px;
+    margin: 0 auto 40px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 20px;
+  }
+  .ap-font-section h3 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 4px;
+  }
+  .ap-font-section > p { color: #777; font-size: 0.78rem; margin: 0 0 16px; }
+  .ap-font-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 14px;
+  }
+  /* Slider ranges */
+  .ap-range-wrap { display: flex; align-items: center; gap: 10px; }
+  .ap-range {
+    flex: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.15);
+    outline: none;
+    cursor: pointer;
+  }
+  .ap-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: #6C63FF;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(108,99,255,0.5);
+  }
+  .ap-range-val {
+    color: #9F9BFF;
+    font-size: 0.78rem;
+    font-weight: 600;
+    min-width: 38px;
+    text-align: right;
+  }
+  /*    Font Chip Selector    */
+  .ap-font-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    max-height: 120px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scroll-behavior: auto;
+    contain: content;
+    padding: 2px 2px 6px;
+    scrollbar-width: thin;
+    scrollbar-color: #6C63FF rgba(255,255,255,0.05);
+  }
+  .ap-font-chips::-webkit-scrollbar { width: 4px; }
+  .ap-font-chips::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 4px; }
+  .ap-font-chips::-webkit-scrollbar-thumb { background: #6C63FF; border-radius: 4px; }
+  .ap-font-chip {
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1.5px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.04);
+    color: #ccc;
+    font-size: 0.78rem;
+    cursor: pointer;
+    transition: all 0.18s;
+    white-space: nowrap;
+    line-height: 1.3;
+  }
+  .ap-font-chip:hover {
+    border-color: rgba(108,99,255,0.5);
+    color: #fff;
+    background: rgba(108,99,255,0.1);
+  }
+  .ap-font-chip.active {
+    border-color: #6C63FF;
+    background: rgba(108,99,255,0.22);
+    color: #fff;
+    box-shadow: 0 0 8px rgba(108,99,255,0.3);
+  }
+  .ap-font-family-group { grid-column: 1 / -1; }
+</style>
+<style>
+    .item img{
+width:100%;
+height:100%;
+object-fit:cover;
+border-radius:10px;
+}
+    .header__languages,
+.lang-overlay,
+.header__buttons-lang,
+.header__buttons-text{
+display:none !important;
+}
+</style>
+<title>NEBULA | Stream Movies & TV Shows</title>
+<meta name="description" content="Watch unlimited movies and TV shows on NEBULA. High-quality streaming, zero ads, and seamless playback.">
+<meta name="keywords" content="streaming, movies, TV shows, watch online, unlimited streaming">
+</head>
+<body class="locked">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWNDPQM"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div class="mask">
+<div class="mask__loader"></div>
+</div>
+<div class="circle"></div>
+<div class="blur"></div>
+<div class="circle-lines">
+<svg width="647" height="656" viewBox="0 0 647 656" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M509.818 516.391C502.833 527.275 494.883 536.984 486.217 545.377C432.325 597.716 361.576 573.652 324.274 554.648C289.101 536.707 254.402 516.08 220.91 496.007C190.863 478.107 159.787 459.622 128.549 443.091L128.016 442.706C90.3158 417.997 27.2065 376.191 39.7744 310.387C43.5779 290.35 51.3125 271.244 62.699 253.504C92.4575 207.139 140.885 179.372 176.296 164.342C260.577 128.398 423.344 97.8933 499.135 211.172C556.326 296.501 561.232 436.287 509.818 516.391ZM126.496 436.538C157.267 456.735 195.161 476.672 225.314 494.649C258.593 514.568 295.799 534.971 330.651 552.682C365.008 570.192 434.167 589.195 482.514 542.089C490.478 534.303 501.649 520.844 508.076 510.831C556.835 434.863 551.661 295.034 497.295 213.819C413.287 99.4725 258.186 133.606 177.428 167.955C127.759 190.048 88.17 221.675 64.3527 258.782C53.8744 275.108 46.6754 293.01 43.1769 311.355C33.2255 363.595 66.675 397.275 126.496 436.538Z" fill="url(#paint0_linear_1793_4)"></path>
+<path d="M199.999 562.98C187.507 559.632 175.841 555.01 165.211 549.305C98.9684 513.869 100.392 439.154 107.159 397.84C113.561 358.878 122.666 319.552 131.61 281.543C139.531 247.478 147.697 212.253 153.952 177.469L154.157 176.844C166.238 133.417 186.885 60.5875 253.397 52.5606C273.641 50.0944 294.194 51.6563 314.556 57.1122C367.772 71.3713 408.944 109.068 434.025 138.236C493.885 207.605 572.417 353.402 487.533 460.036C423.622 540.456 291.94 587.615 199.999 562.98ZM159.57 173.521C149.682 208.975 142.205 251.135 134.242 285.326C125.38 323.085 117.25 364.732 110.971 403.319C104.73 441.372 107.647 513.034 167.218 544.778C177.057 549.999 193.274 556.551 204.767 559.63C291.96 582.994 423.602 535.566 484.452 459.088C567.856 344.3 488.197 206.91 430.928 140.412C394.784 99.8077 352.621 71.7043 310.03 60.292C291.292 55.2712 272.049 53.8537 253.509 56.0963C200.715 62.4932 178.795 104.597 159.57 173.521Z" fill="url(#paint1_linear_1793_4)"></path>
+<defs>
+<linearGradient id="paint0_linear_1793_4" x1="177.298" y1="301.692" x2="509.457" y2="517.94" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8B1788"></stop>
+<stop offset="1" stop-color="#5C35EE"></stop>
+</linearGradient>
+<linearGradient id="paint1_linear_1793_4" x1="119.306" y1="280.293" x2="515.185" y2="410.252" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F5263C"></stop>
+<stop offset="1" stop-color="#6A129F"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+<div class="wrapper" data-scroll-container="">
+<header class="header">
+<nav id="navigation" class="header__nav">
+<div class="header__navbar">
+<div class="header__navigation">
+<a class="header__logo" href="#">
+<img src="images/logo.svg" alt="NEBULA logo">
+<img src="images/logo.svg" width="49" height="30" alt="NEBULA logo mini">
+</a>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const logos = document.querySelectorAll('.header__logo img[src="images/logo.svg"]');
+    logos.forEach(logo => {
+      logo.style.filter = 'brightness(0) invert(1)';
+    });
+  });
+</script>
+<ul class="header__list">
+<li class="header__item">
+<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxheWVycy1wbHVzLWljb24gbHVjaWRlLWxheWVycy1wbHVzIj48cGF0aCBkPSJNMTIuODMgMi4xOGEyIDIgMCAwIDAtMS42NiAwTDIuNiA2LjA4YTEgMSAwIDAgMCAwIDEuODNsOC41OCAzLjkxYTIgMiAwIDAgMCAuODMuMTggMiAyIDAgMCAwIC44My0uMThsOC41OC0zLjlhMSAxIDAgMCAwIDAtMS44MzF6Ii8+PHBhdGggZD0iTTE2IDE3aDYiLz48cGF0aCBkPSJNMTkgMTR2NiIvPjxwYXRoIGQ9Ik0yIDEyYTEgMSAwIDAgMCAuNTguOTFsOC42IDMuOTFhMiAyIDAgMCAwIC44MjUuMTc4Ii8+PHBhdGggZD0iTTIgMTdhMSAxIDAgMCAwIC41OC45MWw4LjYgMy45MWEyIDIgMCAwIDAgMS42NSAwbDIuMTE2LS45NjIiLz48L3N2Zz4=" alt="features">
+<a href="#features" class="header__item-link header__item-link--help">
+Features
+</a>
+</li>
+<li class="header__item">
+<a href="#browse" class="header__item-link header__item-link--blog">
+Browse Content
+</a>
+</li>
+<li class="header__item">
+<a href="#quality" class="header__item-link header__item-link--md">Quality</a>
+<a href="#quality" class="header__item-link header__item-link--sm">Quality</a>
+</li>
+<li class="header__item">
+<a href="#devices" class="header__item-link header__item-link--help" target="_blank" rel="nofollow, noreferrer">Devices</a>
+</li>
+<li class="header__item">
+<a href="#subscription" class="header__item-link header__item-link--blog">Subscription</a>
+</li>
+<li class="header__item">
+<a class="header__item-link" href="#contact" target="_blank" rel="nofollow, noreferrer">
+Contact
+</a>
+</li>
+</ul>
+<div class="header__languages">
+<span class="close-lang "></span>
+<p class="header__languages-select">Select Your Language</p>
+<div class="header__languages-box">
+<a class="header__languages-btn" href="#" data-lang="en">
+<svg>
+<use href="images/sprite.svg#us_uk"></use>
+</svg>
+<span>English</span>
+</a>
+</div>
+</div>
+<span class="lang-overlay"></span>
+</div>
+<div class="header__buttons">
+<button class="header__buttons-lang">
+<svg class="i18nelement" data-i18n="global.svg_use">
+<use href="images/sprite.svg#united_kingdom"></use>
+</svg>
+<span class="i18nelement" data-i18n="global.button_lang">English</span>
+</button>
+<p class="header__buttons-text">Select Your Language</p>
+<a href="#" target="_blank" class="header__buttons-login second-btn">Watch Now</a>
+</div>
+<div class="burger">
+<span></span>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<section class="platform" data-scroll-section="">
+<div class="container">
+<div class="platform__container">
+<div class="platform__description">
+                <h1 class="platform__title title subtitle title-effect" data-scroll-class="title-effect-off" data-scroll="" >
+                    UNLIMITED STREAMING
+                </h1>
+<h2 class="platform__title title title-effect" data-scroll="" data-scroll-class="title-effect-off" data-scroll-repeat="true" >
+                    Movies & TV Shows.<br>Anytime, Anywhere, On Any Device
+                </h2>
+<div class="platform__cards">
+<div class="platform__cards-item">
+Thousands of Titles <br> From Around the World
+</div>
+<div class="platform__cards-item">
+Crystal Clear Quality <br> Up to 4K Resolution
+</div>
+</div>
+<div class="platform__price">
+<p class="platform__price-title">
+Watch Your Favorite Content <br> Ad-Free Experience
+</p>
+<p class="platform__price-price">
+<span class="platform__price-price--from">Premium Quality</span>
+<span class="platform__price-price--price"><sup>Starting</sup>$9.99/mo</span>
+</p>
+<p class="platform__price-subscription">
+Cancel Anytime, No Commitment
+</p>
+</div>
+<div class="platform__button" style="margin-top: 0; justify-content: flex-start;">
+<a href="#" class="platform__button-btn basic-button" target="_blank">
+Start Watching
+</a>
+</div>
+</div>
+<div class="platform__image">
+<picture><source srcset="images/platform_1.png" type="image/webp"><img src="images/platform_1.png" alt="streaming preview" width="924" height="937"></picture>
+</div>
+</div>
+</div>
+</section>
+<!-- ===== FEATURES SECTION ===== -->
+<style>
+ 
+</style>
+
+<section id="features" class="advanced-player-section" data-scroll-section="">
+  <div class="container">
+    <!-- Header -->
+    <div class="ap-header">
+      <h2>Why Choose <span>NEBULA</span></h2>
+      <p>Experience entertainment the way it should be. Premium content, zero interruptions, and seamless streaming.</p>
+    </div>
+
+    <!-- Feature Tabs -->
+    <div class="ap-tabs">
+      <button class="ap-tab active" data-type="movies" onclick="apSetType('movies',this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="17" y1="7" x2="22" y2="7"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="2" y1="17" x2="7" y2="17"></line></svg>
+        MOVIES
+      </button>
+      <button class="ap-tab" data-type="series" onclick="apSetType('series',this)">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
+        SERIES
+      </button>
+    </div>
+
+    <!-- Feature Showcase -->
+    <div class="ap-id-wrap" id="apInputPanel">
+
+      <!-- MOVIES: Features -->
+      <div id="apMovieInputs">
+        <div style="text-align: center; color: #aaa; font-size: 0.95rem; line-height: 1.8;">
+          <p style="margin: 0 0 12px; color: #fff; font-weight: 600;">Blockbuster Movies</p>
+          <p style="margin: 0;">Access our extensive library of Hollywood blockbusters, indie films, and international cinema. From action-packed adventures to intimate dramas, find your next favorite film.</p>
+        </div>
+      </div>
+
+      <!-- SERIES: Features -->
+      <div id="apSeriesInputs" style="display:none">
+        <div style="text-align: center; color: #aaa; font-size: 0.95rem; line-height: 1.8;">
+          <p style="margin: 0 0 12px; color: #fff; font-weight: 600;">Binge-Worthy Series</p>
+          <p style="margin: 0;">Discover award-winning TV shows and series. Binge entire seasons, follow your favorite characters, and never miss an episode with our seamless streaming platform.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Features Grid -->
+    <div class="ap-body" style="grid-template-columns: 1fr 1fr; gap: 28px; max-width: 100%;">
+      <!-- Feature 1 -->
+      <div class="ap-preview-card">
+        <div class="ap-preview-topbar">
+          <span>Ultra HD Quality</span>
+          <span class="ap-live-badge"><span class="ap-live-dot"></span>Available</span>
+        </div>
+        <div style="padding: 28px; text-align: center; color: #aaa; font-size: 0.95rem; line-height: 1.8;">
+          <p style="margin: 0; color: #fff; font-weight: 600; font-size: 1.1rem; margin-bottom: 12px;">4K & HDR Support</p>
+          <p style="margin: 0;">Experience stunning visuals with support for 4K resolution and HDR technology. Every scene comes alive with vibrant colors and incredible detail.</p>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="ap-preview-card">
+        <div class="ap-preview-topbar">
+          <span>Multi-Device Sync</span>
+          <span class="ap-live-badge"><span class="ap-live-dot"></span>Active</span>
+        </div>
+        <div style="padding: 28px; text-align: center; color: #aaa; font-size: 0.95rem; line-height: 1.8;">
+          <p style="margin: 0; color: #fff; font-weight: 600; font-size: 1.1rem; margin-bottom: 12px;">Watch Everywhere</p>
+          <p style="margin: 0;">Start watching on your TV, continue on your tablet, finish on your phone. Your progress syncs instantly across all devices.</p>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="ap-preview-card">
+        <div class="ap-preview-topbar">
+          <span>Personalized Experience</span>
+          <span class="ap-live-badge"><span class="ap-live-dot"></span>Smart</span>
+        </div>
+        <div style="padding: 28px; text-align: center; color: #aaa; font-size: 0.95rem; line-height: 1.8;">
+          <p style="margin: 0; color: #fff; font-weight: 600; font-size: 1.1rem; margin-bottom: 12px;">Smart Recommendations</p>
+          <p style="margin: 0;">Our AI-powered algorithm learns your preferences and suggests content you'll love. Discover new favorites effortlessly.</p>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="ap-preview-card">
+        <div class="ap-preview-topbar">
+          <span>Offline Viewing</span>
+          <span class="ap-live-badge"><span class="ap-live-dot"></span>Ready</span>
+        </div>
+        <div style="padding: 28px; text-align: center; color: #aaa; font-size: 0.95rem; line-height: 1.8;">
+          <p style="margin: 0; color: #fff; font-weight: 600; font-size: 1.1rem; margin-bottom: 12px;">Download & Watch Later</p>
+          <p style="margin: 0;">Download your favorite shows and movies to watch offline. Perfect for travel, commutes, or when you're away from internet.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STREAMING QUALITY SECTION ===== -->
+<style>
+  /* Quality Docs */
+  .api-docs-section {
+    padding: 80px 0 60px;
+    position: relative;
+    z-index: 1;
+  }
+  .api-docs-section .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .api-docs-header { text-align: center; margin-bottom: 50px; }
+  .api-docs-header h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 12px;
+  }
+  .api-docs-header h2 span { color: #6C63FF; }
+  .api-docs-header p { color: #aaa; font-size: 0.97rem; max-width: 560px; margin: 0 auto; line-height: 1.6; }
+
+  /* Quality Cards */
+  .api-embed-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  @media (max-width: 700px) {
+    .api-embed-grid { grid-template-columns: 1fr; }
+  }
+  .api-embed-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .api-embed-card:hover { border-color: rgba(108,99,255,0.35); transform: translateY(-2px); }
+  .api-card-header {
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .api-card-icon {
+    width: 34px; height: 34px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .api-card-icon.movie { background: rgba(108,99,255,0.2); color: #9F9BFF; }
+  .api-card-icon.tv    { background: rgba(79,209,197,0.15); color: #4fd1c5; }
+  .api-card-header h3 { color: #fff; font-size: 0.95rem; font-weight: 700; margin: 0; }
+  .api-card-header p  { color: #888; font-size: 0.72rem; margin: 2px 0 0; }
+  .api-card-body { padding: 16px 20px; }
+  .api-card-body .api-label {
+    color: #777;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 6px;
+  }
+  .api-url-block {
+    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 8px;
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    overflow: hidden;
+  }
+  .api-url-block code {
+    color: #9F9BFF;
+    font-size: 0.75rem;
+    font-family: monospace;
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .api-copy-icon {
+    cursor: pointer;
+    color: #888;
+    flex-shrink: 0;
+    transition: color 0.2s;
+  }
+  .api-copy-icon:hover { color: #6C63FF; }
+  .api-code-block {
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 8px;
+    padding: 14px;
+    overflow-x: auto;
+    position: relative;
+  }
+  .api-code-block pre {
+    margin: 0;
+    font-size: 0.72rem;
+    line-height: 1.6;
+    color: #ccc;
+    font-family: monospace;
+    white-space: pre;
+  }
+  .api-code-block .hl-tag   { color: #fc8181; }
+  .api-code-block .hl-attr  { color: #68d391; }
+  .api-code-block .hl-val   { color: #fbd38d; }
+  .api-copy-block-btn {
+    position: absolute;
+    top: 8px; right: 8px;
+    background: rgba(108,99,255,0.15);
+    border: 1px solid rgba(108,99,255,0.3);
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 0.68rem;
+    color: #9F9BFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.2s;
+  }
+  .api-copy-block-btn:hover { background: rgba(108,99,255,0.3); color: #fff; }
+
+  /* Quality Options Table */
+  .api-options-wrap {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .api-options-header {
+    padding: 20px 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .api-options-header h3 { color: #fff; font-size: 1rem; font-weight: 700; margin: 0; }
+  .api-options-header p  { color: #777; font-size: 0.78rem; margin: 0; }
+  .api-options-table { width: 100%; border-collapse: collapse; }
+  .api-options-table thead tr {
+    background: rgba(108,99,255,0.08);
+    border-bottom: 1px solid rgba(108,99,255,0.15);
+  }
+  .api-options-table thead th {
+    padding: 10px 18px;
+    text-align: left;
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: #9F9BFF;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+  }
+  .api-options-table tbody tr {
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    transition: background 0.15s;
+  }
+  .api-options-table tbody tr:hover { background: rgba(255,255,255,0.03); }
+  .api-options-table tbody tr:last-child { border-bottom: none; }
+  .api-options-table td {
+    padding: 12px 18px;
+    vertical-align: middle;
+    font-size: 0.82rem;
+    color: #ccc;
+  }
+  .api-param-name {
+    font-family: monospace;
+    color: #9F9BFF;
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+  .api-param-example {
+    font-family: monospace;
+    background: rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.07);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: #fbd38d;
+    white-space: nowrap;
+  }
+  .api-param-desc { color: #999; font-size: 0.8rem; }
+  .api-param-example {
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    transition: background 0.15s, color 0.15s;
+  }
+  .api-param-example:hover {
+    background: rgba(108,99,255,0.2);
+    color: #fff;
+    border-color: rgba(108,99,255,0.5);
+  }
+  .api-param-example::after {
+    content: " ";
+    opacity: 0.5;
+    font-size: 0.7em;
+  }
+  .api-param-example.copied {
+    background: rgba(74,222,128,0.15) !important;
+    color: #4ade80 !important;
+    border-color: #4ade80 !important;
+  }
+  @media (max-width: 700px) {
+    .api-embed-grid { grid-template-columns: 1fr; }
+    .api-options-table thead { display: none; }
+    .api-options-table td { display: block; padding: 6px 14px; }
+    .api-options-table tr { padding: 10px 0; display: block; }
+  }
+</style>
+
+<section id="quality" class="api-docs-section" data-scroll-section="">
+  <div class="container">
+    <div class="api-docs-header">
+      <h2>Streaming <span>Quality</span></h2>
+      <p>Choose your perfect streaming experience with our multiple quality options.</p>
+    </div>
+
+    <!-- Quality Cards -->
+    <div class="api-embed-grid">
+
+      <!-- Standard Quality -->
+      <div class="api-embed-card">
+        <div class="api-card-header">
+          <div class="api-card-icon movie"><i data-lucide="film" style="width:18px;height:18px"></i></div>
+          <div>
+            <h3>Standard Quality</h3>
+            <p>1080p HD Resolution</p>
+          </div>
+        </div>
+        <div class="api-card-body">
+          <div class="api-label">Features</div>
+          <div style="color: #aaa; font-size: 0.85rem; line-height: 1.6; margin-bottom: 12px;">
+            <p style="margin: 0;">Full HD streaming at 1080p resolution. Perfect for most devices and internet connections. Enjoy crisp, clear picture quality for all your favorite content.</p>
+          </div>
+          <div class="api-label">Bandwidth Required</div>
+          <div class="api-url-block">
+            <code>5-8 Mbps</code>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4K Ultra HD -->
+      <div class="api-embed-card">
+        <div class="api-card-header">
+          <div class="api-card-icon tv"><i data-lucide="tv-2" style="width:18px;height:18px"></i></div>
+          <div>
+            <h3>Ultra HD Quality</h3>
+            <p>4K & HDR Support</p>
+          </div>
+        </div>
+        <div class="api-card-body">
+          <div class="api-label">Features</div>
+          <div style="color: #aaa; font-size: 0.85rem; line-height: 1.6; margin-bottom: 12px;">
+            <p style="margin: 0;">Experience stunning 4K resolution with HDR technology. Vibrant colors, incredible detail, and immersive viewing on compatible devices.</p>
+          </div>
+          <div class="api-label">Bandwidth Required</div>
+          <div class="api-url-block">
+            <code>25+ Mbps</code>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Quality Comparison Table -->
+    <div class="api-options-wrap">
+      <div class="api-options-header">
+        <i data-lucide="settings-2" style="width:20px;height:20px;color:#6C63FF;flex-shrink:0"></i>
+        <div>
+          <h3>Quality Comparison</h3>
+          <p>Choose the quality that best suits your needs</p>
+        </div>
+      </div>
+      <table class="api-options-table">
+        <thead>
+          <tr>
+            <th>Quality Tier</th>
+            <th>Resolution</th>
+            <th>Frame Rate</th>
+            <th>Audio</th>
+            <th>Bandwidth</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="api-param-name">Standard</span></td>
+            <td>1080p HD</td>
+            <td>24/30 fps</td>
+            <td>Stereo</td>
+            <td><span class="api-param-example">5-8 Mbps</span></td>
+          </tr>
+          <tr>
+            <td><span class="api-param-name">Premium</span></td>
+            <td>2K QHD</td>
+            <td>24/30 fps</td>
+            <td>5.1 Surround</td>
+            <td><span class="api-param-example">15-20 Mbps</span></td>
+          </tr>
+          <tr>
+            <td><span class="api-param-name">Ultra</span></td>
+            <td>4K UHD</td>
+            <td>24/30 fps</td>
+            <td>Dolby Atmos</td>
+            <td><span class="api-param-example">25+ Mbps</span></td>
+          </tr>
+          <tr>
+            <td><span class="api-param-name">Mobile</span></td>
+            <td>720p HD</td>
+            <td>24/30 fps</td>
+            <td>Stereo</td>
+            <td><span class="api-param-example">2-3 Mbps</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="anydevice" data-scroll-section="">
+<div class="container">
+<h3 class="anydevice__title subtitle" data-scroll-repeat="true" data-scroll-class="title-effect-off" data-scroll="">Stream Everywhere Smoothly & Fast</h3>
+<div class="anydevice__inner">
+<picture><source srcset="images/anydevice.png" type="image/webp"><img src="images/anydevice.png" alt="streaming preview" class="anydevice__inner-image" width="1398" height="604" loading="lazy"></picture>
+</div>
+</div>
+</section>
+<section class="begin" data-scroll-section="">
+<div class="container">
+<div class="begin__inner">
+<div class="begin__content">
+<h3 class="begin__title title title-effect" data-scroll-repeat="true" data-scroll-class="title-effect-off" data-scroll="" >Start Your <br> Streaming Journey!</h3>
+<ul class="begin__list">
+<li class="begin__item">
+<svg viewBox="0 0 34 31" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.25843 25.9196H11.5039V28.4079H9.70417C9.38658 28.4079 9.17486 28.6498 9.17486 28.9263V30.4815C9.17486 30.7926 9.42187 30.9999 9.70417 30.9999H18.4203C18.7379 30.9999 18.9496 30.758 18.9496 30.4815V28.9263C18.9496 28.6153 18.7026 28.4079 18.4203 28.4079H16.6206V25.9196H25.866C27.1364 25.9196 28.1245 24.9173 28.1245 23.7077V18.0398H25.0191V22.8782H3.10534V8.91583H13.7976V5.87451H2.25843C0.988061 5.87451 0 6.87676 0 8.08638V23.7077C0 24.9519 1.02335 25.9196 2.25843 25.9196Z" fill="url(#paint0_linear_1904_971)"></path>
+<path d="M19.62 11.0931L15.1031 14.0653C14.8914 14.2035 14.8914 14.5146 15.1031 14.6528L19.62 17.625C19.867 17.7978 20.1846 17.625 20.1846 17.314V15.6896H31.3709C32.1472 15.6896 32.7824 15.0675 32.7824 14.3072V6.70391C32.7824 6.53111 32.6059 6.42743 32.4648 6.53111L30.2769 7.98265C30.1005 8.08633 29.9946 8.29369 29.9946 8.4665V12.9594H20.1846V11.335C20.1846 11.1277 19.867 10.9548 19.62 11.0931Z" fill="url(#paint1_linear_1904_971)"></path>
+<path d="M28.7599 0.379516V2.00386H17.5736C16.7973 2.00386 16.1621 2.62594 16.1621 3.38627V10.9896C16.1621 11.1624 16.3385 11.2661 16.4797 11.1624L18.6676 9.71083C18.844 9.60715 18.9499 9.39979 18.9499 9.22698V4.73413H28.7599V6.35847C28.7599 6.63495 29.0775 6.80775 29.3245 6.66951L33.8414 3.69732C34.0531 3.55907 34.0531 3.24803 33.8414 3.10979L29.3245 0.0684719C29.0775 -0.10433 28.7599 0.0684718 28.7599 0.379516Z" fill="url(#paint2_linear_1904_971)"></path>
+<defs>
+<linearGradient id="paint0_linear_1904_971" x1="0" y1="18.7751" x2="28.1245" y2="18.7751" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2095D9"></stop>
+<stop offset="1" stop-color="#5C35EE"></stop>
+</linearGradient>
+<linearGradient id="paint1_linear_1904_971" x1="14.9443" y1="12.2423" x2="32.7824" y2="12.2423" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2095D9"></stop>
+<stop offset="1" stop-color="#5C35EE"></stop>
+</linearGradient>
+<linearGradient id="paint2_linear_1904_971" x1="16.1621" y1="5.75255" x2="34.0001" y2="5.75255" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2095D9"></stop>
+<stop offset="1" stop-color="#5C35EE"></stop>
+</linearGradient>
+</defs>
+</svg>
+<p>Ultra-Fast Streaming</p>
+</li>
+<li class="begin__item">
+<svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30.036 3.78C29 1.4 26.9 0 24.45 0C21.3 0 18.5 2.45 18.5 5.6C16.47 5.74 15 7.7 15 9.45C15 11.9 17.1 14 19.55 14H30.75C33.55 14 36 11.55 36 8.75C36 5.628 33.326 3.122 30.036 3.78ZM25.5 11.9L22.294 8.4H24.52V5.614C24.52 4.9 24.52 4.9 25.234 4.9H25.766C26.48 4.9 26.48 4.9 26.48 5.614V8.4H28.706L25.5 11.9Z" fill="url(#paint0_linear_1904_975)"></path>
+<path d="M2.25843 24.9196H11.5039V27.4079H9.70417C9.38658 27.4079 9.17486 27.6498 9.17486 27.9263V29.4815C9.17486 29.7926 9.42187 29.9999 9.70417 29.9999H18.4203C18.7379 29.9999 18.9496 29.758 18.9496 29.4815V27.9263C18.9496 27.6153 18.7026 27.4079 18.4203 27.4079H16.6206V24.9196H25.866C27.1364 24.9196 28.1245 23.9173 28.1245 22.7077V17.0398H25.0191V21.8782H3.10534V7.91583H13.7976V4.87451H2.25843C0.988061 4.87451 0 5.87676 0 7.08638V22.7077C0 23.9519 1.02335 24.9196 2.25843 24.9196Z" fill="url(#paint1_linear_1904_975)"></path>
+<defs>
+<linearGradient id="paint0_linear_1904_975" x1="15" y1="6.81171" x2="36" y2="6.81171" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2095D9"></stop>
+<stop offset="1" stop-color="#5C35EE"></stop>
+</linearGradient>
+<linearGradient id="paint1_linear_1904_975" x1="0" y1="17.7751" x2="28.1245" y2="17.7751" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2095D9"></stop>
+<stop offset="1" stop-color="#5C35EE"></stop>
+</linearGradient>
+</defs>
+</svg>
+<p>Easy Setup</p>
+</li>
+<li class="begin__item">
+<svg width="38" height="26" viewBox="0 0 38 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2.25843 20.9196H11.5039V23.4079H9.70417C9.38658 23.4079 9.17486 23.6498 9.17486 23.9263V25.4815C9.17486 25.7926 9.42187 25.9999 9.70417 25.9999H18.4203C18.7379 25.9999 18.9496 25.758 18.9496 25.4815V23.9263C18.9496 23.6153 18.7026 23.4079 18.4203 23.4079H16.6206V20.9196H25.866C27.1364 20.9196 28.1245 19.9173 28.1245 18.7077V13.0398H25.0191V17.8782H3.10534V3.91583H13.7976V0.874512H2.25843C0.988061 0.874512 0 1.87676 0 3.08638V18.7077C0 19.9519 1.02335 20.9196 2.25843 20.9196Z" fill="url(#paint0_linear_1904_967)"></path>
+<path d="M32.4825 3.64147e-05H21.4875C20.0295 0.00268857 18.6322 0.584692 17.6031 1.61801C16.574 2.65133 15.9974 4.05133 16 5.51001C16.0027 6.9687 16.5844 8.36658 17.6173 9.39616C18.6501 10.4257 20.0495 11.0026 21.5075 11C22.4599 10.9996 23.3963 10.7552 24.2274 10.29C25.0586 9.82478 25.7567 9.1543 26.2553 8.3425H27.7996C28.2947 9.15185 28.9887 9.82095 29.8154 10.2861C30.6421 10.7513 31.574 10.997 32.5225 11C33.9805 10.9947 35.3767 10.4101 36.4039 9.37494C37.4312 8.33975 38.0053 6.9387 38 5.48001C37.9947 4.02133 37.4104 2.6245 36.3757 1.5968C35.3409 0.569105 33.9405 -0.00526789 32.4825 3.64147e-05ZM24.3812 5.64001C24.3805 5.74301 24.3392 5.84157 24.2661 5.91417C24.1931 5.98677 24.0943 6.02751 23.9914 6.02751H22.562V7.37501C22.562 7.47844 22.5209 7.57764 22.4478 7.65078C22.3747 7.72392 22.2756 7.765 22.1722 7.765H21.2976C21.1942 7.765 21.0951 7.72392 21.0219 7.65078C20.9488 7.57764 20.9078 7.47844 20.9078 7.37501V6.02751H19.5609C19.4579 6.02751 19.3592 5.98677 19.2861 5.91417C19.2131 5.84157 19.1717 5.74301 19.1711 5.64001V4.76252C19.1711 4.65908 19.2121 4.55989 19.2852 4.48675C19.3583 4.41361 19.4575 4.37252 19.5609 4.37252H20.9078V2.94252C20.9078 2.89143 20.9179 2.84083 20.9375 2.79366C20.9571 2.74648 20.9859 2.70365 21.0221 2.66763C21.0583 2.63162 21.1013 2.60313 21.1486 2.5838C21.1959 2.56448 21.2465 2.5547 21.2976 2.55503H22.1722C22.2233 2.5547 22.2739 2.56448 22.3212 2.5838C22.3685 2.60313 22.4115 2.63162 22.4477 2.66763C22.4839 2.70365 22.5127 2.74648 22.5323 2.79366C22.5519 2.84083 22.562 2.89143 22.562 2.94252V4.37252H23.9914C24.0947 4.37252 24.1939 4.41361 24.267 4.48675C24.3401 4.55989 24.3812 4.65908 24.3812 4.76252V5.64001ZM32.0402 2.14003C32.2665 2.14003 32.4878 2.20718 32.676 2.33299C32.8642 2.45881 33.0109 2.63763 33.0975 2.84685C33.1842 3.05607 33.2068 3.28629 33.1627 3.5084C33.1185 3.73051 33.0095 3.93453 32.8495 4.09466C32.6894 4.25479 32.4855 4.36384 32.2635 4.40802C32.0415 4.4522 31.8113 4.42952 31.6022 4.34286C31.3931 4.2562 31.2143 4.10944 31.0886 3.92115C30.9628 3.73285 30.8957 3.51148 30.8957 3.28502C30.8977 2.98265 31.0191 2.69334 31.2336 2.48023C31.448 2.26712 31.7379 2.14752 32.0402 2.14753V2.14003ZM29.0041 5.18002C29.0041 4.95377 29.0711 4.7326 29.1966 4.54441C29.3221 4.35623 29.5006 4.20947 29.7094 4.12266C29.9183 4.03586 30.1481 4.01289 30.37 4.05667C30.5919 4.10044 30.7958 4.209 30.956 4.36863C31.1163 4.52826 31.2257 4.73181 31.2704 4.95359C31.3151 5.17536 31.2932 5.40543 31.2073 5.61473C31.1215 5.82404 30.9756 6.00321 30.788 6.12962C30.6005 6.25603 30.3797 6.32402 30.1535 6.32501C30.0028 6.32567 29.8535 6.29654 29.714 6.23929C29.5746 6.18204 29.4474 6.09782 29.3412 5.99087C29.2349 5.88392 29.1522 5.75634 29.0982 5.61733C29.0441 5.47833 29.0197 5.32992 29.0041 5.18002Z" fill="url(#paint0_linear_1904_967)"></path>
+<defs>
+<linearGradient id="paint0_linear_1904_967" x1="0" y1="13.7751" x2="28.1245" y2="13.7751" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2095D9"></stop>
+<stop offset="1" stop-color="#5C35EE"></stop>
+</linearGradient>
+<linearGradient id="paint0_linear_1904_967" x1="16" y1="5.5" x2="38" y2="5.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2095D9"></stop>
+<stop offset="1" stop-color="#5C35EE"></stop>
+</linearGradient>
+</defs>
+</svg>
+<p>Multi-Device Support</p>
+</li>
+</ul>
+</div>
+<div class="begin__image">
+<picture><source srcset="images/begin_img.png" type="image/webp"><img src="images/begin_img.png" alt="streaming devices" width="924" height="937" loading="lazy"></picture>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== FAQ SECTION ===== -->
+<style>
+  /* FAQ */
+  .faq-section {
+    padding: 80px 0 60px;
+    position: relative;
+    z-index: 1;
+  }
+  .faq-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .faq-header { text-align: center; margin-bottom: 36px; }
+  .faq-header h2 {
+    font-size: clamp(1.8rem,4vw,2.6rem);
+    font-weight: 800;
+    color: #fff;
+    margin: 0 0 10px;
+  }
+  .faq-header h2 span { color: #6C63FF; }
+  .faq-header p { color: #aaa; font-size: 0.97rem; max-width: 460px; margin: 0 auto 22px; line-height: 1.6; }
+  /* Search */
+  .faq-search-wrap {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto 28px;
+  }
+  .faq-search-wrap i[data-lucide] {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+  }
+  .faq-search {
+    width: 100%;
+    padding: 12px 16px 12px 44px;
+    border-radius: 10px;
+    border: 1.5px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+  }
+  .faq-search:focus { border-color: #6C63FF; }
+  .faq-search::placeholder { color: #555; }
+  /* Category Tabs */
+  .faq-cats {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  .faq-cat-btn {
+    padding: 7px 18px;
+    border-radius: 20px;
+    border: 1.5px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.04);
+    color: #bbb;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .faq-cat-btn:hover { border-color: #6C63FF; color: #fff; }
+  .faq-cat-btn.active { background: #6C63FF; border-color: #6C63FF; color: #fff; box-shadow: 0 0 14px rgba(108,99,255,0.3); }
+  .faq-cat-count {
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 1px 7px;
+    font-size: 0.7rem;
+    margin-left: 4px;
+  }
+  .faq-cat-btn.active .faq-cat-count { background: rgba(255,255,255,0.25); }
+  /* Stats bar */
+  .faq-stats {
+    text-align: center;
+    color: #666;
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+  }
+  .faq-stats span { color: #9F9BFF; font-weight: 600; }
+  /* Accordion */
+  .faq-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-item {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+  .faq-item:hover { border-color: rgba(108,99,255,0.3); }
+  .faq-item.open { border-color: rgba(108,99,255,0.45); }
+  .faq-q {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .faq-num {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: rgba(108,99,255,0.15);
+    border: 1px solid rgba(108,99,255,0.3);
+    color: #9F9BFF;
+    font-size: 0.72rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .faq-q-text {
+    flex: 1;
+    color: #e0e0e0;
+    font-size: 0.92rem;
+    font-weight: 500;
+    line-height: 1.45;
+  }
+  .faq-badge {
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    flex-shrink: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .faq-badge.important { background: rgba(251,113,133,0.15); color: #fb7185; border: 1px solid rgba(251,113,133,0.3); }
+  .faq-badge.technical { background: rgba(79,209,197,0.12); color: #4fd1c5; border: 1px solid rgba(79,209,197,0.25); }
+  .faq-badge.content { background: rgba(251,191,36,0.12); color: #fbbf24; border: 1px solid rgba(251,191,36,0.25); }
+  .faq-chevron {
+    flex-shrink: 0;
+    color: #666;
+    transition: transform 0.3s;
+  }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); color: #9F9BFF; }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.25s;
+    padding: 0 20px;
+  }
+  .faq-item.open .faq-a { max-height: 400px; padding: 0 20px 18px; }
+  .faq-a-inner {
+    padding-top: 4px;
+    padding-left: 42px;
+    color: #999;
+    font-size: 0.88rem;
+    line-height: 1.7;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 14px;
+  }
+  .faq-no-results {
+    text-align: center;
+    color: #555;
+    padding: 40px 0;
+    font-size: 0.9rem;
+    display: none;
+  }
+</style>
+
+<section id="faq" class="faq-section" data-scroll-section="">
+  <div class="container">
+    <div class="faq-header">
+      <h2>Frequently Asked <span>Questions</span></h2>
+      <p>Find answers to commonly asked questions about NEBULA streaming</p>
+      <!-- Search -->
+      <div class="faq-search-wrap">
+        <i data-lucide="search" style="width:16px;height:16px"></i>
+        <input type="text" class="faq-search" id="faqSearch" placeholder="Search FAQs..." oninput="faqFilter()">
+      </div>
+    </div>
+
+    <!-- Category tabs -->
+    <div class="faq-cats">
+      <button class="faq-cat-btn active" data-cat="all" onclick="faqCat('all',this)">All <span class="faq-cat-count">6</span></button>
+      <button class="faq-cat-btn" data-cat="account" onclick="faqCat('account',this)">Account <span class="faq-cat-count">2</span></button>
+      <button class="faq-cat-btn" data-cat="technical" onclick="faqCat('technical',this)">Technical <span class="faq-cat-count">2</span></button>
+      <button class="faq-cat-btn" data-cat="content" onclick="faqCat('content',this)">Content <span class="faq-cat-count">2</span></button>
+    </div>
+
+    <div class="faq-stats">Frequently Asked Questions &mdash; <span id="faqCount">6</span> questions available</div>
+
+    <!-- FAQ Items -->
+    <div class="faq-list" id="faqList">
+
+      <div class="faq-item" data-cat="account" onclick="faqToggle(this)">
+        <div class="faq-q">
+          <span class="faq-num">1</span>
+          <span class="faq-q-text">How do I create a NEBULA account?</span>
+          <span class="faq-badge account">Account</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px;height:18px"></i>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Creating a NEBULA account is simple. Visit our website, click "Sign Up," and provide your email address and password. You can also sign up using your existing Google or Apple account for faster registration. Once verified, you can start your free trial immediately.</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="content" onclick="faqToggle(this)">
+        <div class="faq-q">
+          <span class="faq-num">2</span>
+          <span class="faq-q-text">What content is available on NEBULA?</span>
+          <span class="faq-badge content">Content</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px;height:18px"></i>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">NEBULA offers thousands of movies and TV shows across all genres including action, drama, comedy, horror, documentaries, and more. Our library includes the latest releases, classic favorites, and exclusive original content. New titles are added regularly to keep our catalog fresh and exciting.</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="technical" onclick="faqToggle(this)">
+        <div class="faq-q">
+          <span class="faq-num">3</span>
+          <span class="faq-q-text">What devices can I use to watch NEBULA?</span>
+          <span class="faq-badge technical">Technical</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px;height:18px"></i>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">NEBULA is available on all major devices including smartphones (iOS and Android), tablets, smart TVs, laptops, and desktop computers. You can watch on your TV with Apple TV, Roku, Amazon Fire Stick, and Chromecast. Download the NEBULA app from your device's app store or visit nebula.rizoel.com to stream directly from your browser.</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="technical" onclick="faqToggle(this)">
+        <div class="faq-q">
+          <span class="faq-num">4</span>
+          <span class="faq-q-text">What internet speed do I need for streaming?</span>
+          <span class="faq-badge technical">Technical</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px;height:18px"></i>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">For smooth streaming, we recommend at least 5-8 Mbps for HD quality and 25+ Mbps for 4K Ultra HD. Our adaptive streaming technology automatically adjusts quality based on your connection speed. You can also manually select your preferred quality in the player settings.</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="account" onclick="faqToggle(this)">
+        <div class="faq-q">
+          <span class="faq-num">5</span>
+          <span class="faq-q-text">Can I download content to watch offline?</span>
+          <span class="faq-badge account">Account</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px;height:18px"></i>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Yes! Premium members can download movies and TV shows to watch offline. Simply tap the download icon next to the title. Downloads are available for 30 days and can be watched on any of your registered devices. This is perfect for travel or when you're away from internet connectivity.</div></div>
+      </div>
+
+      <div class="faq-item" data-cat="content" onclick="faqToggle(this)">
+        <div class="faq-q">
+          <span class="faq-num">6</span>
+          <span class="faq-q-text">Are there subtitles available in multiple languages?</span>
+          <span class="faq-badge content">Content</span>
+          <i data-lucide="chevron-down" class="faq-chevron" style="width:18px;height:18px"></i>
+        </div>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely! Most of our content includes subtitles in multiple languages including English, Spanish, French, German, Italian, Portuguese, Hindi, Japanese, and many more. You can select your preferred subtitle language in the player settings. Audio tracks in different languages are also available for select titles.</div></div>
+      </div>
+
+    </div>
+    <div class="faq-no-results" id="faqNoResults">No questions found matching your search.</div>
+  </div>
+</section>
+
+<script>
+function faqToggle(el) {
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) el.classList.add('open');
+}
+let faqActiveCat = 'all';
+function faqCat(cat, btn) {
+  faqActiveCat = cat;
+  document.querySelectorAll('.faq-cat-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  faqFilter();
+}
+function faqFilter() {
+  const q = document.getElementById('faqSearch').value.toLowerCase().trim();
+  let visible = 0;
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const cat = item.dataset.cat;
+    const text = item.textContent.toLowerCase();
+    const catMatch = faqActiveCat === 'all' || cat === faqActiveCat;
+    const textMatch = q === '' || text.includes(q);
+    item.style.display = catMatch && textMatch ? 'block' : 'none';
+    if (catMatch && textMatch) visible++;
+  });
+  document.getElementById('faqCount').textContent = visible;
+  document.getElementById('faqNoResults').style.display = visible === 0 ? 'block' : 'none';
+}
+function apSetType(type, btn) {
+  document.querySelectorAll('.ap-tab').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('apMovieInputs').style.display = type === 'movies' ? 'block' : 'none';
+  document.getElementById('apSeriesInputs').style.display = type === 'series' ? 'block' : 'none';
+}
+</script>
+
+<!-- ===== FOOTER ===== -->
+<style>
+  .footer-simple {
+    padding: 60px 0 40px;
+    background: rgba(0,0,0,0.3);
+    border-top: 1px solid rgba(255,255,255,0.06);
+    position: relative;
+    z-index: 1;
+  }
+  .footer-simple .container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .footer-simple-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    text-align: center;
+  }
+  .footer-logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer-logo-wrap img { height: 28px; filter: brightness(0) invert(1); }
+  .footer-logo-name {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: 0.02em;
+  }
+  .footer-tagline {
+    color: #666;
+    font-size: 0.82rem;
+    text-align: center;
+    max-width: 380px;
+    line-height: 1.6;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-nav a {
+    color: #999;
+    font-size: 0.82rem;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .footer-nav a:hover { color: #fff; }
+  /* Contact button */
+  .footer-telegram-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 22px;
+    border-radius: 24px;
+    background: linear-gradient(135deg,rgba(108,99,255,0.25),rgba(79,209,197,0.15));
+    border: 1.5px solid rgba(108,99,255,0.4);
+    color: #c5c2ff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .footer-telegram-btn:hover { background: linear-gradient(135deg,rgba(108,99,255,0.45),rgba(79,209,197,0.25)); color: #fff; transform: translateY(-1px); box-shadow: 0 4px 18px rgba(108,99,255,0.3); }
+  .footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.06);
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .footer-copy { color: #555; font-size: 0.78rem; }
+  .footer-legal { display: flex; gap: 18px; }
+  .footer-legal a { color: #555; font-size: 0.78rem; text-decoration: none; transition: color 0.2s; }
+  .footer-legal a:hover { color: #aaa; }
+  @media (max-width: 600px) {
+    .footer-bottom { justify-content: center; flex-direction: column; text-align: center; }
+  }
+</style>
+
+<footer class="footer-simple" data-scroll-section="">
+  <div class="container">
+    <div class="footer-simple-inner">
+      <!-- Logo -->
+      <div class="footer-logo-wrap">
+        <img src="images/logo.svg" alt="NEBULA Logo">
+        <span class="footer-logo-name">NEBULA</span>
+      </div>
+      <!-- Tagline -->
+      <p class="footer-tagline">Premium streaming of movies and TV shows. Zero ads, crystal-clear quality, and seamless playback on all devices.</p>
+      <!-- Nav links -->
+      <nav class="footer-nav">
+        <a href="#features">Features</a>
+        <a href="#browse">Browse</a>
+        <a href="#quality">Quality</a>
+        <a href="#devices">Devices</a>
+        <a href="#subscription">Subscription</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <!-- Contact button -->
+      <a href="#contact" target="_blank" rel="nofollow, noreferrer" class="footer-telegram-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        Get in Touch
+      </a>
+      <div class="footer-divider"></div>
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <span class="footer-copy">&copy; 2026 NEBULA. All rights reserved.</span>
+        <div class="footer-legal">
+          <a href="/privacy/" target="_blank">Privacy Policy</a>
+          <a href="/terms/" target="_blank">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+<script data-cfasync="false" src="js/email-decode.min.js"></script><script src="js/app.min.js" type="f67375a9a6dfac6346e25897-text/javascript"></script>
+<script src="js/rocket-loader.min.js" data-cf-settings="f67375a9a6dfac6346e25897-|49" defer=""></script>
+</body>
+</html>
